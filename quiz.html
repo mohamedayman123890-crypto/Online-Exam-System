@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Online Quiz Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="quiz-page">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">Q</div>
+      <div><span class="small">ONLINE</span><h1>Quiz Portal</h1></div>
+    </div>
+    <div class="timer" id="timer">60:00</div>
+  </header>
+
+  <main class="quiz-wrap">
+    <div class="student-line">
+      <div>
+        <span>Student</span>
+        <strong id="studentName"></strong>
+      </div>
+      <div>
+        <span>ID</span>
+        <strong id="studentId"></strong>
+      </div>
+    </div>
+
+    <section class="quiz-card">
+      <div class="question-head">
+        <span>Question <b id="number">1</b> of 5</span>
+        <div class="progress"><i id="progress"></i></div>
+      </div>
+
+      <h2 id="question"></h2>
+      <div id="answers" class="answers"></div>
+
+      <div class="actions">
+        <button id="next">Next Question →</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

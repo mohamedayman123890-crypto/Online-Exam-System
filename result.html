@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result | Quiz Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="result-card">
+      <div class="check">✓</div>
+      <p class="small">EXAM COMPLETED</p>
+      <h1>Great job!</h1>
+      <p id="student"></p>
+      <div class="score"><span id="score">0</span><small>/ 5</small></div>
+      <a href="index.html">Back to Login</a>
+      <div class="powered">powered by <strong>Eng. Mohamed Ayman</strong></div>
+    </section>
+  </main>
+  <script>
+    document.getElementById("student").textContent =
+      sessionStorage.getItem("studentName") || "Student";
+    document.getElementById("score").textContent =
+      sessionStorage.getItem("score") || "0";
+  </script>
+</body>
+</html>
